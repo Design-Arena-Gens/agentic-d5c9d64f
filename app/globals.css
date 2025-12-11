@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.book-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #f8f5e6;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.book-cover {
+  background: linear-gradient(135deg, #8b0000, #ff6347, #ffd700);
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+  border-bottom: 5px solid #8b0000;
+}
+
+.book-cover h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
+.book-cover h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.book-cover .author {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-top: 30px;
+  opacity: 0.9;
+}
+
+.book-pages {
+  background: #f8f5e6;
+  padding: 50px 60px;
+  line-height: 1.8;
+  color: #2c2c2c;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #8b0000;
+}
+
+.page-header h3 {
+  font-size: 2rem;
+  color: #8b0000;
+  margin-bottom: 10px;
+}
+
+.chapter {
+  margin-bottom: 50px;
+  page-break-inside: avoid;
+}
+
+.chapter h4 {
+  font-size: 1.6rem;
+  color: #8b0000;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 5px solid #ffd700;
+}
+
+.chapter p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+  text-indent: 30px;
+}
+
+.chapter ul {
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+.chapter li {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+  list-style-type: circle;
+}
+
+.highlight {
+  background: rgba(255, 215, 0, 0.2);
+  padding: 20px;
+  border-left: 4px solid #ffd700;
+  margin: 25px 0;
+  font-style: italic;
+}
+
+.quote {
+  text-align: center;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #8b0000;
+  margin: 30px 0;
+  padding: 20px;
+  background: rgba(255, 215, 0, 0.1);
+  border-top: 2px solid #ffd700;
+  border-bottom: 2px solid #ffd700;
+}
+
+.page-number {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+}
+
+.key-points {
+  background: rgba(139, 0, 0, 0.05);
+  padding: 25px;
+  border-radius: 8px;
+  margin: 25px 0;
+}
+
+.key-points h5 {
+  color: #8b0000;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .book-cover h1 {
+    font-size: 2.5rem;
+  }
+
+  .book-cover h2 {
+    font-size: 1.5rem;
+  }
+
+  .book-pages {
+    padding: 30px 25px;
+  }
+
+  .chapter h4 {
+    font-size: 1.3rem;
+  }
+
+  .chapter p {
+    font-size: 1rem;
+  }
+}
